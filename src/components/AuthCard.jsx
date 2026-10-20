@@ -3,8 +3,12 @@ import { Card, Button, Form, Alert, Spinner } from "react-bootstrap";
 import useAuth from "../context/useAuth";
 
 const AuthCard = () => {
-  const { loginWithGoogle, loginWithEmail, signupWithEmail, loginAnonymouslyUser } =
-    useAuth();
+  const {
+    loginWithGoogle,
+    loginWithEmail,
+    signupWithEmail,
+    loginAnonymouslyUser,
+  } = useAuth();
 
   const [isRegistering, setIsRegistering] = useState(false);
   const [email, setEmail] = useState("");
@@ -21,7 +25,11 @@ const AuthCard = () => {
     if (code === "auth/popup-closed-by-user") {
       return "Google Sign-In popup was closed before completing.";
     }
-    if (code === "auth/invalid-credential" || code === "auth/wrong-password" || code === "auth/user-not-found") {
+    if (
+      code === "auth/invalid-credential" ||
+      code === "auth/wrong-password" ||
+      code === "auth/user-not-found"
+    ) {
       return "Invalid email or password.";
     }
     if (code === "auth/email-already-in-use") {
@@ -30,7 +38,10 @@ const AuthCard = () => {
     if (code === "auth/weak-password") {
       return "Password should be at least 6 characters.";
     }
-    return err.message || "Authentication failed. Please check your Firebase settings.";
+    return (
+      err.message ||
+      "Authentication failed. Please check your Firebase settings."
+    );
   };
 
   const handleGoogleSignIn = async () => {
@@ -90,10 +101,6 @@ const AuthCard = () => {
         </div>
 
         <h4 className="fw-bold mb-1">Sign In Required</h4>
-        <p className="text-muted small mb-4">
-          Your Firestore security rules require an authenticated session (
-          <code>request.auth != null</code>) to read or write database records.
-        </p>
 
         {error && (
           <Alert variant="danger" className="text-start small py-2">
