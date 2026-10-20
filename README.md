@@ -1,16 +1,62 @@
-# React + Vite
+# 🔥 Firebase Combined
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Hey! 👋
 
-Currently, two official plugins are available:
+Thanks for checking out **Firebase Combined**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a React project where I experimented with different **Firebase features** and learned how Firebase can be integrated into a frontend application.
 
-## React Compiler
+The project focuses on working with Firebase services, handling data, authentication, and connecting a React application with a backend-as-a-service platform.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ What's Inside?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- 🔥 Firebase integration
+- ⚛️ React-based UI
+- 🔐 Firebase Authentication
+- 🗄️ Firebase Database
+- 📦 Firebase Storage
+- 🔄 CRUD operations
+- 🧩 Component-based React structure
+- ⚡ Vite development setup
+
+---
+
+## 🛠️ Built With
+
+- ⚛️ React
+- ⚡ Vite
+- 🔥 Firebase
+- 💻 JavaScript
+- 🎨 CSS
+- 📦 npm
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ Firebase Application
+
+> Firebase Auth
+
+<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/d86bb067-d4b8-4c38-b46e-51e7795f7625" />
+
+
+---
+
+### 🖥️ Firebase Interface
+
+> Firebase Database and Storage
+
+<img width="1915" height="912" alt="image" src="https://github.com/user-attachments/assets/bba9afaf-2b76-45fc-a4a4-033b2f10b13c" />
+
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/brij018/Firebase-Combined.git
