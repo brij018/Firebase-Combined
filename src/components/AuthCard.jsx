@@ -19,6 +19,9 @@ const AuthCard = () => {
 
   const getFriendlyError = (err) => {
     const code = err.code || "";
+    if (code === "auth/unauthorized-domain") {
+      return "Unauthorized domain! In Firebase Console -> Authentication -> Settings -> Authorized domains, add 'localhost' or '127.0.0.1'.";
+    }
     if (code === "auth/operation-not-allowed") {
       return "This Sign-In provider is disabled in Firebase. Enable it in Firebase Console -> Authentication -> Sign-in method.";
     }
