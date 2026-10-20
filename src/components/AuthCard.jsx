@@ -22,8 +22,11 @@ const AuthCard = () => {
     if (code === "auth/unauthorized-domain") {
       return "Unauthorized domain! In Firebase Console -> Authentication -> Settings -> Authorized domains, add 'localhost' or '127.0.0.1'.";
     }
-    if (code === "auth/operation-not-allowed") {
-      return "This Sign-In provider is disabled in Firebase. Enable it in Firebase Console -> Authentication -> Sign-in method.";
+    if (
+      code === "auth/operation-not-allowed" ||
+      code === "auth/admin-restricted-operation"
+    ) {
+      return "Anonymous (Guest) sign-in is not enabled in Firebase. Go to Firebase Console -> Authentication -> Sign-in method, click 'Anonymous' and toggle 'Enable'.";
     }
     if (code === "auth/popup-closed-by-user") {
       return "Google Sign-In popup was closed before completing.";
