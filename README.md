@@ -60,3 +60,11 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/brij018/Firebase-Combined.git
+
+```
+
+---
+
+## Video Explaination
+
+  https://drive.google.com/file/d/1IHhmYzRmpqyYO20D7vnLCXvICw8Z0TeU/view?usp=sharing
